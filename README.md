@@ -1,51 +1,40 @@
-# Hi, I'm Xosya
+<h1>Hi, I'm Xosya</h1>
+<p><strong>Data Engineer · Workflow Automation · AI Explorer</strong></p>
+<p>I work with Python, SQL, and Google Cloud to build data pipelines and reporting workflows. I also automate repetitive tasks and explore AI applications that connect information, tools, and people.</p>
+<h2>Selected work</h2>
+<ul>
+<li><strong><a href="docs/case-studies/dynamic-reporting.md">Cloud reporting workflows</a></strong> — orchestrating report requests and generating files with Airflow and Google Cloud.</li>
+<li><strong><a href="docs/case-studies/monitoring-file-setup.md">Monitoring and workflow automation</a></strong> — preparing daily workbooks, synchronizing records, and distributing updates.</li>
+<li><strong><a href="docs/projects/wanderlust-concierge.md">Wanderlust Concierge</a></strong> — a travel-planning AI prototype using Google ADK and Gemini. <em>Private source; public overview.</em></li>
+</ul>
+<h2>Tech stack</h2><h3>Languages & querying</h3><p align="center"><img src="assets/stack/python.svg" alt="Python" width="86" height="88"><img src="assets/stack/sql-generic.svg" alt="SQL" width="86" height="88"></p><h3>Data pipelines & cloud</h3><p align="center"><img src="assets/stack/airflow.svg" alt="Airflow" width="86" height="88"><img src="assets/stack/bigquery.svg" alt="BigQuery" width="86" height="88"><img src="assets/stack/storage.svg" alt="Cloud Storage" width="86" height="88"><img src="assets/stack/pubsub.svg" alt="Pub/Sub" width="86" height="88"><img src="assets/stack/cloudrun.svg" alt="Cloud Run" width="86" height="88"><img src="assets/stack/sql.svg" alt="SQL Server" width="86" height="88"></p><h3>Workflow automation</h3><p align="center"><img src="assets/stack/appscript.svg" alt="Apps Script" width="86" height="88"><img src="assets/stack/automate.svg" alt="Power Automate" width="86" height="88"><img src="assets/stack/power-automate-desktop.svg" alt="Power Automate Desktop" width="86" height="88"><img src="assets/stack/sheets.svg" alt="Google Sheets" width="86" height="88"><img src="assets/stack/excel.svg" alt="Excel Online" width="86" height="88"></p><h3>AI applications</h3><p align="center"><img src="assets/stack/adk.svg" alt="Google ADK" width="86" height="88"><img src="assets/stack/gemini.svg" alt="Gemini" width="86" height="88"><img src="assets/stack/firestore.svg" alt="Firestore" width="86" height="88"><img src="assets/stack/fastapi.svg" alt="FastAPI" width="86" height="88"><img src="assets/stack/a2ui.svg" alt="A2UI" width="86" height="88"></p><h2>Writing</h2>
+<ul>
+<li><a href="https://medium.com/edts/building-scalable-data-pipeline-orchestration-with-apache-airflow-on-gcp-dynamic-report-generation-12a0f6a207c8">Building scalable reporting pipelines with Airflow on GCP</a></li>
+<li><a href="https://medium.com/edts/how-to-avoid-repetitive-manual-work-with-one-google-apps-script-5b776674407a">Avoiding repetitive work with Google Apps Script</a></li>
+<li><a href="https://xsalassa.medium.com/automating-your-daily-project-report-with-power-automate-0ddfab6f6297">Automating daily project reports with Power Automate</a></li>
+</ul>
+<h2>Let's connect</h2>
+<p>I'm happy to connect about data engineering roles, freelance automation projects, and AI collaborations.</p>
+<p><a href="https://xsalassa.medium.com">Medium</a> · <a href="https://github.com/xsalassa?tab=repositories">GitHub repositories</a></p>
+<details>
+<summary>More projects and engineering case studies</summary>
+<h3>Engineering case studies</h3>
+<ul>
+<li><a href="docs/case-studies/dynamic-reporting.md">Cloud reporting</a></li>
+<li><a href="docs/case-studies/monitoring-file-setup.md">Daily monitoring setup</a></li>
+<li><a href="docs/case-studies/daily-project-report.md">Daily project updates</a></li>
+<li><a href="docs/case-studies/report-distribution.md">Report approvals and distribution</a></li>
+<li><a href="docs/case-studies/sql-excel-sync.md">SQL-to-Excel synchronization</a></li>
+<li><a href="docs/case-studies/pdf-watermarking.md">PDF watermarking</a></li>
+</ul>
+<h3>Earlier projects</h3>
+<ul>
+<li><a href="https://github.com/xsalassa/Quantium">Quantium retail analytics</a></li>
+<li><a href="https://github.com/xsalassa/Klasifikasi-Penyakit-Tanaman">Plant disease classification</a></li>
+<li><a href="https://github.com/xsalassa/Sales-Performance-Report">Sales Performance Report</a></li>
+<li><a href="https://github.com/xsalassa/Customer-Analytics-Report---SQL">Customer Analytics</a></li>
+<li><a href="https://github.com/xsalassa/DQLab">DQLab learning exercises</a></li>
+</ul>
+<p>These earlier projects include educational analysis and academic experiments. Each engineering study documents its implementation and evidence limits.</p>
+</details>
 
-Data engineering and workflow automation, with Python, SQL, and Google Cloud.
-
-I build and maintain data pipelines, reporting workflows, and operational automation using Python, SQL, and Google Cloud. My work includes data transformation and validation, file generation and delivery, and monitoring integrations. The case studies below highlight selected examples I can share publicly.
-
-## Engineering case studies
-
-These write-ups use inspected source code, my articles and project documentation, with diagrams and selected sanitized source captures. The watermark study also shows a locally tested reconstruction with synthetic input. The cloud-flow write-ups do not claim verified deployments.
-
-- [Excel generation with Airflow, Pub/Sub and Cloud Run](docs/case-studies/dynamic-reporting.md): publish workbook requests, query BigQuery and write XLSX in a worker, then check outputs and publish notification requests. A separate direct CSV/manifest DAG is documented alongside it.
-- [Daily monitoring setup with Apps Script](docs/case-studies/monitoring-file-setup.md): prepare daily checkpoint workbooks, resolve weekday and holiday assignments, preserve existing files, and coordinate scheduled and manual monitoring checks.
-- [Daily project updates with Power Automate](docs/case-studies/daily-project-report.md): turn an Excel checklist into a Teams summary, email report, and monthly activity log.
-- [File approvals and report distribution](docs/case-studies/report-distribution.md): route incoming files through approval, workbook updates, and notifications.
-- [SQL-to-Excel synchronization](docs/case-studies/sql-excel-sync.md): compare source and workbook records, update matching rows, and build notification tables.
-- [PDF watermarking with Python and Power Automate Desktop](docs/case-studies/pdf-watermarking.md): apply an image overlay to PDFs through a desktop batch workflow, with clear limits on what the overlay proves.
-
-## Tools used in these examples
-
-| Work | Tools |
-| --- | --- |
-| File generation and orchestration | Apache Airflow, Python, BigQuery, Cloud Storage, Pub/Sub, Cloud Run, XlsxWriter |
-| Spreadsheet automation | Google Apps Script, Google Sheets, Google Drive |
-| Workflow integration | Power Automate, Excel Online, OneDrive, Teams, Outlook, SQL Server |
-| Desktop document processing | Power Automate Desktop, Python, PyMuPDF |
-
-## Selected AI & analytics projects
-
-| Project | What to inspect |
-| --- | --- |
-| [Wanderlust Concierge (private repository)](https://github.com/xsalassa/buildwithgemini-wanderlust-concierge) | A travel-agent prototype using Google ADK, Gemini, Firestore, memory hooks and an A2UI frontend. Weather responses are simulated; live integrations depend on environment configuration. |
-| [Quantium retail analytics](https://github.com/xsalassa/Quantium) | Python notebooks for customer segmentation, control-store selection and store-trial comparisons. Educational analysis with stored outputs; results have not been independently revalidated here. |
-| [Plant disease classification](https://github.com/xsalassa/Klasifikasi-Penyakit-Tanaman) | Academic leaf-image classification experiments with CNN notebooks and saved evaluation figures. These are historical model experiments, with no new accuracy or deployment claim. |
-
-These projects complement the six engineering case studies above. Their repository documentation distinguishes implemented code, prototypes and reproduction limits.
-
-## Earlier SQL projects
-
-My public repositories also include educational work:
-
-- [Sales Performance Report](https://github.com/xsalassa/Sales-Performance-Report): retail sales and promotion analysis using DQLab material.
-- [Customer Analytics](https://github.com/xsalassa/Customer-Analytics-Report---SQL): exercises on revenue, customer activity, and repeat transactions.
-- [DQLab](https://github.com/xsalassa/DQLab): SQL, Python, and R learning exercises.
-
-## How I document a project
-
-I start with the input and the expected output, then explain the dependencies and the recovery path. If a result has not been measured or a demo cannot be reproduced, I say so.
-
-[How to read the diagrams and source captures](docs/visuals.md)
-
-[Browse my repositories](https://github.com/xsalassa?tab=repositories)

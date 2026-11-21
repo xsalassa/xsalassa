@@ -39,3 +39,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Profile technology tiles
+
+Technology marks in `assets/stack` identify the tools used in the linked projects. Sources are recorded in `assets/stack/sources.json`. SQL is an original generic language tile, not a vendor mark. Power Automate Desktop uses the Power Automate product mark with a separate Desktop label. Google ADK and A2UI assets come from their official project documentation repositories; Firestore comes from Google's legacy Cloud icon collection. Gemini and FastAPI assets are distributed by SVGL under its existing MIT notice above. Third-party names and trademarks remain the property of their respective owners.
