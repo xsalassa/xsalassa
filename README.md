@@ -1,51 +1,67 @@
+![Xosya Salassa — data engineering, automation, and AI; three connected nodes on a blue background.](assets/profile/banner.svg)
+
 # Hi, I'm Xosya
 
-Data engineering and workflow automation, with Python, SQL, and Google Cloud.
+**Data engineering. Practical automation. AI applications.**
 
-I build and maintain data pipelines, reporting workflows, and operational automation using Python, SQL, and Google Cloud. My work includes data transformation and validation, file generation and delivery, and monitoring integrations. The case studies below highlight selected examples I can share publicly.
+I build data pipelines, automate reporting and operational workflows, and explore AI applications that connect tools and information. I enjoy the work between systems: getting data where it needs to go, making repetitive tasks easier, and turning an idea into something people can use.
 
-## Engineering case studies
+[Featured work](#featured-work) · [Toolkit](#toolkit) · [Writing & case studies](#writing--case-studies) · [Let's connect](#lets-connect)
 
-These write-ups use inspected source code, my articles and project documentation, with diagrams and selected sanitized source captures. The watermark study also shows a locally tested reconstruction with synthetic input. The cloud-flow write-ups do not claim verified deployments.
+## Featured work
 
-- [Excel generation with Airflow, Pub/Sub and Cloud Run](docs/case-studies/dynamic-reporting.md): publish workbook requests, query BigQuery and write XLSX in a worker, then check outputs and publish notification requests. A separate direct CSV/manifest DAG is documented alongside it.
-- [Daily monitoring setup with Apps Script](docs/case-studies/monitoring-file-setup.md): prepare daily checkpoint workbooks, resolve weekday and holiday assignments, preserve existing files, and coordinate scheduled and manual monitoring checks.
-- [Daily project updates with Power Automate](docs/case-studies/daily-project-report.md): turn an Excel checklist into a Teams summary, email report, and monthly activity log.
-- [File approvals and report distribution](docs/case-studies/report-distribution.md): route incoming files through approval, workbook updates, and notifications.
-- [SQL-to-Excel synchronization](docs/case-studies/sql-excel-sync.md): compare source and workbook records, update matching rows, and build notification tables.
-- [PDF watermarking with Python and Power Automate Desktop](docs/case-studies/pdf-watermarking.md): apply an image overlay to PDFs through a desktop batch workflow, with clear limits on what the overlay proves.
+### Data engineering / From query to workbook
 
-## Tools used in these examples
+Reporting needs more than a query. This example uses **Airflow, BigQuery, Pub/Sub, and Cloud Run** to coordinate workbook requests, generate XLSX files, and check outputs before requesting notifications.
 
-| Work | Tools |
-| --- | --- |
-| File generation and orchestration | Apache Airflow, Python, BigQuery, Cloud Storage, Pub/Sub, Cloud Run, XlsxWriter |
-| Spreadsheet automation | Google Apps Script, Google Sheets, Google Drive |
-| Workflow integration | Power Automate, Excel Online, OneDrive, Teams, Outlook, SQL Server |
-| Desktop document processing | Power Automate Desktop, Python, PyMuPDF |
+[Explore the reporting architecture →](docs/case-studies/dynamic-reporting.md)
 
-## Selected AI & analytics projects
+### Automation / Less daily setup, clearer handoffs
 
-| Project | What to inspect |
-| --- | --- |
-| [Wanderlust Concierge (private repository)](https://github.com/xsalassa/buildwithgemini-wanderlust-concierge) | A travel-agent prototype using Google ADK, Gemini, Firestore, memory hooks and an A2UI frontend. Weather responses are simulated; live integrations depend on environment configuration. |
-| [Quantium retail analytics](https://github.com/xsalassa/Quantium) | Python notebooks for customer segmentation, control-store selection and store-trial comparisons. Educational analysis with stored outputs; results have not been independently revalidated here. |
-| [Plant disease classification](https://github.com/xsalassa/Klasifikasi-Penyakit-Tanaman) | Academic leaf-image classification experiments with CNN notebooks and saved evaluation figures. These are historical model experiments, with no new accuracy or deployment claim. |
+Monitoring and reporting involve repeated preparation and updates. My examples use **Google Apps Script** to prepare daily checkpoint workbooks and **Power Automate** to turn an Excel checklist into project summaries and activity logs.
 
-These projects complement the six engineering case studies above. Their repository documentation distinguishes implemented code, prototypes and reproduction limits.
+[Daily monitoring setup →](docs/case-studies/monitoring-file-setup.md) · [Project reporting workflow →](docs/case-studies/daily-project-report.md)
 
-## Earlier SQL projects
+### AI / Wanderlust Concierge
 
-My public repositories also include educational work:
+Travel planning brings together preferences, destinations, and budgets. This **prototype** explores a conversational approach with **Google ADK, Gemini, Firestore, and an A2UI interface**. Its source repository is private; the public overview explains the implementation and its limits.
 
-- [Sales Performance Report](https://github.com/xsalassa/Sales-Performance-Report): retail sales and promotion analysis using DQLab material.
-- [Customer Analytics](https://github.com/xsalassa/Customer-Analytics-Report---SQL): exercises on revenue, customer activity, and repeat transactions.
-- [DQLab](https://github.com/xsalassa/DQLab): SQL, Python, and R learning exercises.
+[Read the public project overview →](docs/projects/wanderlust-concierge.md)
 
-## How I document a project
+## Toolkit
 
-I start with the input and the expected output, then explain the dependencies and the recovery path. If a result has not been measured or a demo cannot be reproduced, I say so.
+- **Data engineering:** Python · SQL · Apache Airflow · BigQuery · Cloud Storage · Pub/Sub · Cloud Run · XlsxWriter
+- **Workflow automation:** Google Apps Script · Google Sheets · Power Automate · Excel Online · SQL Server · Power Automate Desktop
+- **AI applications:** Google ADK · Gemini · Firestore · FastAPI · A2UI
 
-[How to read the diagrams and source captures](docs/visuals.md)
+## Writing & case studies
 
-[Browse my repositories](https://github.com/xsalassa?tab=repositories)
+I document inputs, outputs, dependencies, and recovery paths. Each study includes its evidence and implementation limits.
+
+- [Cloud reporting](docs/case-studies/dynamic-reporting.md) — orchestrating requests and generating report files.
+- [Daily monitoring setup](docs/case-studies/monitoring-file-setup.md) — preparing workbooks and coordinating checks.
+- [Daily project updates](docs/case-studies/daily-project-report.md) — turning a checklist into summaries and an activity log.
+- [Report approvals and distribution](docs/case-studies/report-distribution.md) — routing files through approvals, updates, and notifications.
+- [SQL-to-Excel synchronization](docs/case-studies/sql-excel-sync.md) — matching records and updating workbook rows.
+- [PDF watermarking](docs/case-studies/pdf-watermarking.md) — applying image overlays in a desktop batch workflow.
+
+[Read my articles on Medium](https://xsalassa.medium.com) · [About the diagrams and source captures](docs/visuals.md)
+
+<details>
+<summary>Earlier analytics, SQL, and academic projects</summary>
+
+These projects reflect my earlier learning and experiments. Their documentation covers the available results and reproduction limits.
+
+- [Quantium retail analytics](https://github.com/xsalassa/Quantium) — customer segmentation and store-trial comparisons in Python notebooks.
+- [Plant disease classification](https://github.com/xsalassa/Klasifikasi-Penyakit-Tanaman) — academic CNN experiments with leaf images.
+- [Sales Performance Report](https://github.com/xsalassa/Sales-Performance-Report) — educational retail sales and promotion analysis.
+- [Customer Analytics](https://github.com/xsalassa/Customer-Analytics-Report---SQL) — SQL exercises on revenue, activity, and repeat transactions.
+- [DQLab](https://github.com/xsalassa/DQLab) — SQL, Python, and R learning exercises.
+
+</details>
+
+## Let's connect
+
+Have a data engineering role, a workflow to simplify, or an AI idea to explore? I'd be happy to talk about roles, freelance projects, and collaboration.
+
+[Find me on Medium](https://xsalassa.medium.com) · [Explore my repositories](https://github.com/xsalassa?tab=repositories)

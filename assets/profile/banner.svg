@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Xosya Salassa — data, automation, AI</title>
+<desc id="desc">Three connected nodes represent data engineering, workflow automation, and AI applications.</desc>
+<rect width="1200" height="360" rx="18" fill="#142c3c"/>
+<path d="M0 306H1200M774 0V360M1128 0V360" stroke="#274555" stroke-width="1"/>
+<text x="64" y="85" fill="#89c8c3" font-family="Arial, sans-serif" font-size="19" letter-spacing="3">XS / BUILDING CONNECTIONS</text>
+<text x="60" y="172" fill="#f1f6fa" font-family="Arial, sans-serif" font-size="64" font-weight="700">Xosya Salassa</text>
+<text x="64" y="228" fill="#c2d6df" font-family="Arial, sans-serif" font-size="24">Data engineering · Automation · AI</text>
+<text x="64" y="329" fill="#89c8c3" font-family="Arial, sans-serif" font-size="17">FROM DATA TO SOMETHING USEFUL</text>
+<path d="M856 126H1004V240H856Z" fill="none" stroke="#639baf" stroke-width="3"/>
+<path d="M856 126L1004 240" stroke="#639baf" stroke-width="3"/>
+<g fill="#142c3c" stroke="#89c8c3" stroke-width="3"><circle cx="856" cy="126" r="23"/><circle cx="1004" cy="126" r="23"/><circle cx="1004" cy="240" r="23"/></g>
+<g fill="#d7e7ec" font-family="Arial, sans-serif" font-size="17"><text x="831" y="85">DATA</text><text x="965" y="85">AUTOMATE</text><text x="994" y="292">AI</text></g>
+<circle cx="856" cy="240" r="7" fill="#639baf"/>
+</svg>
