@@ -1,8 +1,6 @@
 # Reading the visuals
 
-Case-study diagrams are simplified illustrations of the supplied sources. PNG pairs support light and dark themes, and `.mmd` files in `assets/flows/` provide editable Mermaid equivalents. The offline `assets/flows/visuals.html` contains the authored HTML/SVG diagrams.
-
-The three files in `assets/captures/` are visually inspected crops from sanitized article pages. They show a source task-group drawing, a historical monitoring log example, and a source count-condition drawing. They are labeled source excerpts; none proves a current production deployment or a measured outcome.
+Case-study diagrams are simplified illustrations of the supplied sources. Selected PNG pairs support light and dark themes, and `.mmd` files in `assets/flows/` provide editable Mermaid equivalents. The offline `assets/flows/visuals.html` contains the authored HTML/SVG diagrams.
 
 `assets/synthetic-examples/watermark-demo.png` compares actual local CLI input/output using generated documents and a neutral sample mark. It does not depict a real signature, business document, or production run.
 

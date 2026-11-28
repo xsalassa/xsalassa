@@ -17,10 +17,6 @@ A weekday recurrence reads activity rows and an overall progress entry from an E
 
 It also appends a dated entry to a monthly report workbook and deletes checklist rows marked for cleanup. The article shows an activity-count condition that stops the flow for a small result set. Whether that condition correctly handles one valid activity depends on the table's actual header and row semantics; that behavior needs a fixture test.
 
-<img src="../../assets/captures/daily-report-branch.png" width="832" height="360" alt="Sanitized source illustration of the activity-count condition and proceed or stop branches">
-
-Source article illustration after sanitization. Its count condition is not validated executable logic.
-
 ## Separate from the file-created workflow
 
 The scheduled report and the file-created process are different workflows. The JSON stored in the supplied `ProjectProgress` package represents the latter: a file-created workflow with approval and distribution branches. The [file distribution case study](report-distribution.md) documents that export separately.

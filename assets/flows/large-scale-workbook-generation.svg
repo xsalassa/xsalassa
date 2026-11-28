@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 568" role="img" aria-labelledby="title description">
+<title id="title">Large-scale workbook generation</title><desc id="description">Terraform and Cloud Build support configuration and images. Airflow coordinates BigQuery preparation, complete-group manifests and batched workbook generation, followed by output-count checks.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#31578b"/></marker></defs>
+<rect width="1080" height="568" rx="24" fill="#eef4fb"/>
+<text x="30" y="42" font-family="system-ui,sans-serif" font-size="25" font-weight="700" fill="#111827">Large-scale workbook generation</text>
+<rect x="30" y="68" width="1020" height="136" rx="13" fill="#f8faff" stroke="#a9bdd4"/>
+<text x="50" y="97" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#31578b">Build and infrastructure · separate responsibilities</text>
+<rect x="50" y="117" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="62" y="143" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Terraform</text>
+<text x="62" y="165" font-family="system-ui,sans-serif" font-size="14" fill="#344966">Infrastructure definitions</text>
+<rect x="30" y="224" width="1020" height="136" rx="13" fill="#f8faff" stroke="#a9bdd4"/>
+<text x="50" y="253" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#31578b">Container image build</text>
+<rect x="50" y="273" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="62" y="299" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Cloud Build</text>
+<text x="62" y="321" font-family="system-ui,sans-serif" font-size="14" fill="#344966">Container build trigger</text>
+<path d="M274 305 h25" stroke="#31578b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="302" y="273" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="314" y="299" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Container image</text>
+<text x="314" y="321" font-family="system-ui,sans-serif" font-size="14" fill="#344966">Workbook worker runtime</text>
+<rect x="30" y="380" width="1020" height="136" rx="13" fill="#f8faff" stroke="#a9bdd4"/>
+<text x="50" y="409" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#31578b">Airflow / Cloud Composer orchestration</text>
+<rect x="50" y="429" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="62" y="455" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">BigQuery</text>
+<text x="62" y="477" font-family="system-ui,sans-serif" font-size="14" fill="#344966">Prepare report details</text>
+<path d="M274 461 h25" stroke="#31578b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="302" y="429" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="314" y="455" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Batch manifest</text>
+<text x="314" y="477" font-family="system-ui,sans-serif" font-size="14" fill="#344966">Keep groups intact</text>
+<path d="M526 461 h25" stroke="#31578b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="554" y="429" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="566" y="455" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Cloud Run Jobs</text>
+<text x="566" y="477" font-family="system-ui,sans-serif" font-size="14" fill="#344966">XlsxWriter and ZIP64</text>
+<path d="M778 461 h25" stroke="#31578b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="806" y="429" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="818" y="455" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Output validation</text>
+<text x="818" y="477" font-family="system-ui,sans-serif" font-size="14" fill="#344966">Compare manifest counts</text>
+<text x="30" y="549" font-family="system-ui,sans-serif" font-size="13" fill="#344966">Conceptual architecture · environment-specific wiring omitted</text>
+</svg>

@@ -23,18 +23,18 @@ Weekends and holidays select different workbook profiles; they do not automatica
 
 | Check | Selected source behavior |
 | --- | --- |
-| Looker | Scheduled checks at 14:00 and 16:00; the nonworking-day 16:00 check is not applicable |
-| File status | Scheduled 09:00 check against BigQuery-backed metadata |
-| Platform monitoring | Separate weekday 07:00 and nonworking-day 08:00 handlers |
+| Looker | Scheduled checks with a separate nonworking-day policy |
+| File status | Scheduled check against BigQuery-backed metadata |
+| Platform monitoring | Separate weekday and nonworking-day handlers |
 | Airflow status | Manual from the sidebar; trigger setup removes old scheduled Airflow handlers |
 | Holiday edits | On-edit schedule refresh and pending-change warning |
-| Daily file | Optional time trigger controlled by `DAILY_COPY_HOUR`, or manual invocation |
+| Daily file | Optional time trigger or manual invocation |
 
 These are configured entry points, not proof that the triggers or external integrations were enabled.
 
 ## Code and validation
 
-The companion `apps-script-monitoring/` folder contains 19 `.gs` modules, two runtime HTML components and the manifest. `02_template_service.gs`, `06_trigger_service.gs`, `09_monitoring_day_service.gs` and `10_schedule_engine.gs` define the flow above. Organization labels, project/workspace identifiers, selected branch codes and notification addresses use generic aliases. Workbook data, source documents, deployment identity and live Script Properties are excluded.
+The selected Apps Script modules and runtime components document template preparation, trigger configuration, day classification and schedule handling. Organization labels, project/workspace identifiers, selected branch codes and notification addresses use generic aliases. Workbook data, source documents, deployment identity and live Script Properties are excluded.
 
 Five local Node tests cover calendar classification, long holidays/next-workday behavior, recipient parsing, subject separators, HTML includes and macro resolution. No hosted Apps Script run, permission grant, email, API call or workbook write was performed. Test partial creation, duplicate invocations, conflicting schedules and quotas in a dedicated synthetic environment before adapting.
 

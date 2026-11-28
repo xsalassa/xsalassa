@@ -1,6 +1,6 @@
 flowchart LR
     S0["Poll readiness: upstream success table"]
-    S1["Run report SQL: eight task groups"]
+    S1["Run report SQL: parallel task groups"]
     S2["Export CSV files: Cloud Storage / shards"]
     S3["Join and checksum: SHA-1 file manifest"]
     S4["Finish the DAG: output file set"]

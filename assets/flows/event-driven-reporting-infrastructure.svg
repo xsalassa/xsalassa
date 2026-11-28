@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 412" role="img" aria-labelledby="title description">
+<title id="title">Event-driven reporting infrastructure</title><desc id="description">A manual Cloud Build trigger builds a container image. The distinct runtime path is authenticated Pub/Sub HTTP push to Cloud Run. Optional dead-letter configuration is a capability of the push module.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#31578b"/></marker></defs>
+<rect width="1080" height="412" rx="24" fill="#eef4fb"/>
+<text x="30" y="42" font-family="system-ui,sans-serif" font-size="25" font-weight="700" fill="#111827">Event-driven reporting infrastructure</text>
+<rect x="30" y="68" width="1020" height="136" rx="13" fill="#f8faff" stroke="#a9bdd4"/>
+<text x="50" y="97" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#31578b">Build module · Terraform configuration</text>
+<rect x="50" y="117" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="62" y="143" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Manual trigger</text>
+<text x="62" y="165" font-family="system-ui,sans-serif" font-size="14" fill="#344966">Cloud Build</text>
+<path d="M274 149 h25" stroke="#31578b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="302" y="117" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="314" y="143" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Container image</text>
+<text x="314" y="165" font-family="system-ui,sans-serif" font-size="14" fill="#344966">Build output</text>
+<rect x="30" y="224" width="1020" height="136" rx="13" fill="#f8faff" stroke="#a9bdd4"/>
+<text x="50" y="253" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#31578b">Push module · Terraform configuration</text>
+<rect x="50" y="273" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="62" y="299" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Pub/Sub subscription</text>
+<text x="62" y="321" font-family="system-ui,sans-serif" font-size="14" fill="#344966">Optional dead-letter topic</text>
+<path d="M274 305 h25" stroke="#31578b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="302" y="273" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="314" y="299" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">HTTP push</text>
+<text x="314" y="321" font-family="system-ui,sans-serif" font-size="14" fill="#344966">OIDC authentication</text>
+<path d="M526 305 h25" stroke="#31578b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+<rect x="554" y="273" width="224" height="65" rx="8" fill="#ffffff" stroke="#879ebe"/>
+<text x="566" y="299" font-family="system-ui,sans-serif" font-size="16" font-weight="650" fill="#111827">Cloud Run service</text>
+<text x="566" y="321" font-family="system-ui,sans-serif" font-size="14" fill="#344966">IAM invocation permission</text>
+<text x="30" y="393" font-family="system-ui,sans-serif" font-size="13" fill="#344966">Conceptual architecture · environment-specific wiring omitted</text>
+</svg>

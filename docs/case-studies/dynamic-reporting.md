@@ -17,7 +17,7 @@ Airflow orchestrates workbook generation by publishing requests. A Cloud Run wor
 4. For `Report_type: excel_table` and `Format: xlsx`, the callback queries BigQuery into a DataFrame, writes the workbook, uploads it to GCS and records an operational log.
 5. Airflow separately polls output object counts, then publishes email requests followed by chat requests to their respective topics. Publishing a notification request does not prove delivery.
 
-The payload keys are `Report_type`, `Table`, `Filter`, `Format`, `Target_filename`, `Target_bucket`, `Target_folder`, and `Client_Project_Id`. The companion `airflow-reporting/excel-generation/` folder includes the selected publisher, extracted XLSX writer method, a synthetic payload and local contract/writer tests. It does not include a complete deployable worker or the external subscription.
+The payload carries the report type, input selection, output format, and destination metadata. The companion materials document the selected publisher, extracted XLSX writer method, synthetic payload, and local contract and writer tests. It does not include a complete deployable worker or the external subscription.
 
 ## Decisions and limits
 
@@ -29,12 +29,9 @@ Local tests compare payload keys and exercise the extracted writer with a fake w
 
 ## Separate direct CSV implementation
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../../assets/flows/csv-generation-dark.png">
-  <img src="../../assets/flows/csv-generation.png" width="1080" height="614" alt="Separate Airflow CSV DAG: poll upstream readiness, execute eight report groups in two chains, export to GCS, join and create a SHA-1 manifest">
-</picture>
+[Editable direct CSV flow](../../assets/flows/csv-generation.mmd)
 
-The retained `airflow-reporting/airflow_reporting/` source is a separate direct CSV pipeline: readiness polling, eight SQL task groups in two parallel chains, GCS export with shard composition, and a joined SHA-1 manifest. It does not trigger the Excel worker. Its private notification integrations remain explicit stubs; no Airflow import, SQL execution or production run was performed.
+The retained direct CSV source describes readiness polling, SQL task groups in parallel chains, GCS export with shard composition, and a joined SHA-1 manifest. It does not trigger the Excel worker. Its private notification integrations remain explicit stubs; no Airflow import, SQL execution or production run was performed.
 
 ## Article and code provenance
 

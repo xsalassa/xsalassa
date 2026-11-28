@@ -31,4 +31,4 @@ The export refers to environment-specific connections, workbooks, folders, and r
 
 ## Source
 
-The supplied Power Automate package labeled `Project Progress`. An identical definition also appears inside the supplied `Polreg New Data` export tree. This workflow is distinct from the [scheduled daily checklist report](daily-project-report.md).
+The supplied Power Automate definition for file-created workflows. The duplicate export contains the same definition. This workflow is distinct from the [scheduled daily checklist report](daily-project-report.md).

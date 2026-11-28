@@ -29,4 +29,4 @@ Static inspection confirms the configured trigger and actions. It does not estab
 
 ## Source
 
-The supplied Power Automate package labeled `Polreg New Data`. Its nested export contains an identical copy of the same definition. Database endpoints, business identifiers, workbook locations, and recipients are excluded from this write-up.
+The supplied Power Automate definition for SQL-to-Excel synchronization. Its nested export contains an identical copy. Database endpoints, business identifiers, workbook locations, and recipients are excluded from this write-up.
